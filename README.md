@@ -50,9 +50,11 @@ Creates the network dataset, which is saved to the datasets/ directory. Addition
 An undirected graph of the network with degree distribution, where the circles with labels being users that have a degree > 50 and the size of the circle is the scale of the degree. The user with the highest degree had a degree of 421.
 ![Undirected graph of the network with circles being the scale of the degree distribution.](imgs/network_visualization.png)
 ![Top 10 active users, by degree centrality.](imgs/key_leaders.png)
+
 The degree distribution suggests that the majority of users are not connected to each other, but there are a few key leaders that interact frequently with many users.
 ![Degree distribution of all users.](imgs/degree_distribution.png)
 ![Directed subgraph of top 10 users.](imgs/top_users_subgraph.png)
+
 The network dataset is merged between the submissions and comments dataset to find users that are connected to one another.
 ![Network dataset shows users who have connected through interactions.](imgs/network_df)
 
