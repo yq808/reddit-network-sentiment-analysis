@@ -49,6 +49,7 @@ Creates the network dataset, which is saved to the datasets/ directory. Addition
 Highly recommend looking at the [PDF](reddit-network.pdf).
 
 **Network Analysis**
+
 An undirected graph of the network with degree distribution, where the circles with labels being users that have a degree > 50 and the size of the circle is the scale of the degree. The user with the highest degree had a degree of 421.
 
 ![Undirected graph of the network with circles being the scale of the degree distribution.](imgs/network_visualization.png)
@@ -64,6 +65,7 @@ The network dataset is merged between the submissions and comments dataset to fi
 ![Network dataset shows users who have connected through interactions.](imgs/network_df.png)
 
 **Sentiment Analysis**
+
 ![Histogram of sentiment scores for submissions.](imgs/sentiment_submissions.png)
 ![Histogram of sentiment scores for comments.](imgs/sentiment_comments.png)
 
