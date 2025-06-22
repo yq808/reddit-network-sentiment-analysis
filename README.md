@@ -46,25 +46,32 @@ Creates the network dataset, which is saved to the datasets/ directory. Addition
 
 ### Results
 
+Highly recommend looking at the [PDF](reddit-network.pdf).
+
 **Network Analysis**
 An undirected graph of the network with degree distribution, where the circles with labels being users that have a degree > 50 and the size of the circle is the scale of the degree. The user with the highest degree had a degree of 421.
+
 ![Undirected graph of the network with circles being the scale of the degree distribution.](imgs/network_visualization.png)
 ![Top 10 active users, by degree centrality.](imgs/key_leaders.png)
 
 The degree distribution suggests that the majority of users are not connected to each other, but there are a few key leaders that interact frequently with many users.
+
 ![Degree distribution of all users.](imgs/degree_distribution.png)
 ![Directed subgraph of top 10 users.](imgs/top_users_subgraph.png)
 
 The network dataset is merged between the submissions and comments dataset to find users that are connected to one another.
-![Network dataset shows users who have connected through interactions.](imgs/network_df)
+
+![Network dataset shows users who have connected through interactions.](imgs/network_df.png)
 
 **Sentiment Analysis**
 ![Histogram of sentiment scores for submissions.](imgs/sentiment_submissions.png)
 ![Histogram of sentiment scores for comments.](imgs/sentiment_comments.png)
 
 The effects of emotional contagion are demonstrated in the dataset, which suggests that emotion expressed by others influence our own emotions. The positive correlation suggests that when a submission is more positive, its comments tends to be more positive as well. However, the correlation is small (0.1), indicating a relatively weak, positive relationship. A one-sample t-test to see how much comments under the same submission deviated from the mean polarity suggested that users’ comments tend to share the same sentiments within a submission.
+
 ![Relationship between the submissions' polarity and the comments' polarity.](imgs/polarity_correlation.png)
 ![Relationship between the submissions' subjectivity and the comments' subjectivity.](imgs/subjectivity_correlation.png)
 
 An analysis of mentions of medication within the subreddit suggest that there is room for improvement with medications.
+
 ![A table of the sentiment of submissions and comments that mention certain medications.](imgs/medication_sentiment.png)
